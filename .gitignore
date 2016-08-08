@@ -113,9 +113,10 @@ $RECYCLE.BIN/
 ### Laravel ###
 vendor/
 node_modules/
-
 Homestead.yaml
 Homestead.json
+vendor/
+node_modules/
 
 # Laravel 4 specific
 bootstrap/compiled.php
@@ -130,9 +131,6 @@ storage/
 
 vendor/
 node_modules/
-
-# Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
-.rocketeer/
 
 # Rocketeer PHP task runner and deployment package. https://github.com/rocketeers/rocketeer
 .rocketeer/
