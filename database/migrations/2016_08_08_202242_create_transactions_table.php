@@ -19,7 +19,7 @@ class CreateTransactionsTable extends Migration
             $table->decimal('amount', 5, 2);
             $table->dateTime('datedon');	//Date the expense is to be dated on
             $table->enum('type', ['expense', 'payment', 'withdrawal', 'dividend', 'director_expense' ])->default('payment');
-            $table->enum('status', ['potential', 'invoiced', 'paid', 'cancelled' ])->default('payment');
+            $table->enum('status', ['potential', 'invoiced', 'paid', 'cancelled' ])->default('potential');
             $table->timestamps();
         });
     }
