@@ -24,7 +24,9 @@ class StoreTransactionRequest extends FormRequest
 		return [
 				'description'   => 'required',
 				'amount'        => 'required|numeric',
-				'datedon'        => 'required|date'
+				'datedon'       => 'required|date',
+				'type'			=> 'required',
+				'status'		=> 'required'
 		];
 	}
 }
