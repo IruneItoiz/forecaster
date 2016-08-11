@@ -33,4 +33,12 @@ class User extends Authenticatable
     {
         $this->attributes['password'] = \Hash::make($value);
     }
+    
+    /**
+     * Get all of the transactions for the user.
+     */
+    public function transactions()
+    {
+    	return $this->hasMany(Transaction::class);
+    }
 }
